@@ -1,0 +1,68 @@
+<div class="col-xl-2 col-12 mb-xl-0 mb-3 m-0">
+        <div id="sidebar" class="p-3 bg-body-tertiary rounded-3 input-group col-12">
+            <ul class="nav nav-pills flex-column mb-auto list-group col-xl-12 col-3">
+                <li class="nav-item "><a href="{{url_for('tdb')}}" class="nav-link {% if data %} active {% else %} link-body-emphasis {% endif %}">
+                    Tableaux de Bords
+                </a></li>
+                <li class="nav-item "><a href="{{url_for('list_projets')}}" class="nav-link {% if projets %} active {% else %} link-body-emphasis {% endif %}">
+                    Listes des projets
+                </a></li>
+                <li class="nav-item "><a href="{{url_for('list_clients')}}" class="nav-link {% if clients %} active {% else %} link-body-emphasis {% endif %}">
+                    Listes des clients
+                </a></li>
+                <li class="nav-item "><a href="{{url_for('list_intervenants')}}" class="nav-link {% if intervenants %} active {% else %} link-body-emphasis {% endif %}">
+                    Liste des intervenants
+                </a></li>
+                <li class="nav-item "><a href="{{url_for('list_membres')}}" class="nav-link {% if membres %} active {% else %} link-body-emphasis {% endif %}">
+                    Liste des membres de TNS
+                </a></li>
+                <li class="nav-item "><a href="{{url_for('stats')}}" class="nav-link {% if stats %} active {% else %} link-body-emphasis {% endif %}">
+                    Statistiques
+                </a></li>
+            </ul>
+            <div class="col-0 col-xl-12 h-auto"><hr></div>
+            <div class="col-6 col-xl-0"></div>
+            <div class="col-xl-12 offset-xl-0 col-3">
+                <div class="d-flex align-items-center justify-content-end me-1 w-100">
+                    <a href="{{url_for('new_projet')}}">
+                        <p class="m-1 text-decoration-none">Nouveau projet</p>
+                    </a>
+                    <a href="{{url_for('new_projet')}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="m-1" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end me-1 w-100">
+                    <a href="{{url_for('new_intervenant')}}">
+                        <p class="m-1 text-decoration-none">Nouvel intervenant</p>
+                    </a>
+                    <a href="{{url_for('new_intervenant')}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="m-1" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end me-1 w-100">
+                    <a href="{{url_for('new_membre')}}">
+                        <p class="m-1 text-decoration-none">Nouveau membre</p>
+                    </a>
+                    <a href="{{url_for('new_membre')}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="m-1" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-end me-1 w-100">
+                    <a href="{{url_for('new_client')}}">
+                        <p class="m-1 text-decoration-none">Nouveau client</p>
+                    </a>
+                    <a href="{{url_for('new_client')}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="m-1" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>

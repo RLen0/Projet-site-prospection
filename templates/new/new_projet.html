@@ -1,0 +1,59 @@
+{% extends "template.html" %}
+
+{% block title %}Projet{% endblock %}
+<!--id ou name ici jsp-->
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+
+{% block template %}
+<div class="col-xl-10 col-12 m-0">
+            <form method="POST" action="{{ url_for('new_projet')}}">
+            <div class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping1">Nom du projet</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom projet" aria-describedby="addon-wrapping1" placeholder = "Nom du projet" name="titre">
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping2">Client</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom client " aria-describedby="addon-wrapping2" placeholder = "Nom du client" name="client">
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "baddon-wrapping4">Chef de projet</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom chef de projet " aria-describedby="addon-wrapping4" name="chefprojet" placeholder = "Nom du chef de projet" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "baddon-wrapping4">Date création</span>
+                    <input type ="text" class ="form-control" aria-label = "Date création " aria-describedby="addon-wrapping4" name="date" placeholder = "Date" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "baddon-wrapping4">Date fin</span>
+                    <input type ="text" class ="form-control" aria-label = "Date création " aria-describedby="addon-wrapping4" name="datef" placeholder = "Date" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "baddon-wrapping4">Rémunération en euros</span>
+                    <input type ="text" class ="form-control" aria-label = "Rémunération " aria-describedby="addon-wrapping4" name="remunération" placeholder = "Rémunération en euros" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping5">Compétences requises</span>
+                    <input type ="text" class ="form-control" aria-label = "Compétence " aria-describedby="addon-wrapping1" placeholder = "Compétence" name="competences">
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping5">Intervenant</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom intervenant " aria-describedby="addon-wrapping5" name= 'intervenant'placeholder = "Nom de l'intervenant" >
+                </div>
+                <div class = "input-group mb-3 w-100">
+                    <span class = "input-group-text" id = "addon-wrapping3">Description du projet</span>
+                    <textarea class = "form-control" name='description' placeholder = "Description du projet"></textarea>
+                </div>
+                        <div class = "col justify-content-center">
+                            <div class = "input-group mb-3">
+                                <button class = "btn btn-outline-secondary" type = "submit" id = "button-addon9">Valider</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+</div>
+{% endblock %}

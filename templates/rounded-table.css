@@ -1,0 +1,12 @@
+table tr:first-child th:first-child {
+  border-top-left-radius: 1rem;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 1rem;
+}
+
+td, th {
+    /*background-color: #fffcec !important;*/
+    /*background-color: #fffff9 !important;*/
+}

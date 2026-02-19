@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+
+{% block title %}Tableau de bord{% endblock %}
+
+{% block template %}
+
+{% for cat in data %}
+<div class="d-flex flex-column col container w-50 h-100 bg-body-tertiary justify-content-around align-items-center mx-5 my-3 p-0 rounded-3 pb-2">
+    <div class="bg-info h-auto rounded-top-3 mb-2 w-100 border-dark border-2 border-bottom pt-2">
+        <h1 class="px-3 h4 text-center">{{ cat.title }}</h1>
+    </div>
+    {% for projet in cat.projets %}
+    <div class="row bg-warning-subtle justify-content-start align-items-start flex-column p-3 rounded-2 container-fluid w-75 my-2 ">
+        <a href="{{url_for('projet', id=projet.id_Projet)}}" class="h5 nav w-auto p-0 px-3">{{ projet.titre }}</a>
+        <a href="{{url_for('client', id=projet.id_Client)}}" class="h6 nav-pills w-auto p-0 px-3">{{ projet.client_nom }}</a>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+
+{% block title %}Statistiques{% endblock %}
+
+{% block template %}
+
+<div class = "container mt-5">
+    <div class = "text-center mb-4">
+        Satistiques de TNS 
+    </div>
+    <div class = "row-text-center">
+        <div class = "col-md-4 mb-4">
+            <figure class = "figure">
+                <img src = "{{Nombre_client}}" class = "figure-img img-fluid rounded">
+                <figcaption class = "figure-caption">
+                    Nombre de clients
+                </figcaption>
+            </figure>
+        </div>
+        <div class = "col-md-4 mb-4">
+            <figure class = "figure">
+                <img src = "{{Projet_en_cours}}" class = "figure-img img-fluid rounded">
+                <figcaption class = "figure-caption">
+                    Projets en cours
+                </figcaption>
+            </figure>
+        </div>
+        <div class = "col-md-4 mb-4">
+            <figure class = "figure">
+                <img src = "{{Repart_projet}}" class = "figure-img img-fluid rounded">
+                <figcaption class = "figure-caption">
+                    Répartition des projets
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

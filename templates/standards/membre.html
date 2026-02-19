@@ -1,0 +1,70 @@
+<!-- Pour l'instant membre.blabla ne renvoie rien, je ne sais pas encore comment utiliser correctement la route membre-->
+
+{% extends "template.html" %}
+
+{% block title %}Membre {{membre.id}}{% endblock %}
+<!--id ou name ici jsp-->
+
+{% block template %}
+<h1>{{ membre.nom }}</h1>
+
+<div class = "input-group mb-3">
+    <span class = "input-group-text" id = "addon-wrapping">Contact</span>
+    <h2>{{ membre.telephone }}</h2>
+</div>
+<div class = "input-group mb-3">
+    <span class = "input-group-text" id = "addon-wrapping2">Email</span>
+    <h3>{{ membre.email }}</h3>
+</div>
+<div class = "input-group mb-3">
+    <span class = "input-group-text" id = "addon-wrapping3">Année scolaire</span>
+    <h4>{{ membre.annee_scolaire }}</h4>
+</div>
+<div class = "input-group mb-3">
+    <span class = "input-group-text" id = "addon-wrapping3">Statut</span>
+    <h4>{{ membre.id_statut }}</h4>
+</div>
+<div class = "input-group mb-3">
+    <span class="input-group-text" id="visible-addon">Document du membre</span>
+    <input type = "file" class = "form-control-file" id = "fichier">
+    <!-- A Faire : Reussir a aller chercher dans la table projet, ou dans une table ou cette donnée est stockée, le fichier csv du membre -->
+</div>
+<h6>Projets</h6>
+{% if membre.id_statut == '2'%} 
+    <table class = "table table-striped">
+        <thead class = "thead-light">
+            <tr>
+                <th>Déja effectués</th>
+                <th>En cours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>        
+                    {% if projet_effectué %}
+                    <ul>
+                        {% for projet in projet_effectué %}
+                        <li>{{projet.titre }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                        Aucun projet
+                    {% endif %}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if projet_en_cours %}
+                    <ul>{% for projet in projet_en_cours %}
+                        <li>{{projet.titre }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                        Aucun projet
+                    {% endif %}
+                    {% endif %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endif %}
+{% endblock %}

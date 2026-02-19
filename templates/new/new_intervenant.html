@@ -1,0 +1,45 @@
+{% extends "template.html" %}
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+{% block title %}Nouvel intervenant{% endblock %}
+<!--id ou name ici jsp-->
+
+{% block template %}
+<div class="col-xl-10 col-12 m-0">
+            <div id="template" class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                <div class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                <form action="{{url_for ('new_intervenant')}}" method='POST'>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping1">Nom de l'intervenant</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom intervenant" aria-describedby="addon-wrapping1" placeholder = "Nom" name="nom" >
+                    <span class = "input-group-text" id = "addon-wrapping2">Prénom de l'intervenant</span>
+                    <input type ="text" class ="form-control" aria-label = "Nom intervenant" aria-describedby="addon-wrapping2" placeholder = "Prénom" name="prenom" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping3">Année scolaire</span>
+                    <input type ="text" class ="form-control" aria-label = "Année d'étude" aria-describedby="addon-wrapping3" placeholder = "Année d'étude"name='annee_scolaire' >
+                    <span class = "input-group-text" id = "addon-wrapping3">Email</span>
+                    <input type ="text" class ="form-control" aria-label = "Email" aria-describedby="addon-wrapping4" placeholder = "Email" name="email" >
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping5">Disponibilité</span>
+                    <input type ="text" class ="form-control" aria-label = "Disponibilité" aria-describedby="addon-wrapping4" placeholder = "disponible ou indisponible" name="disponibilite" >
+
+                
+                </div>
+                <div class = "input-group mb-3">
+                    <span class = "input-group-text" id = "addon-wrapping7">Compétences</span>
+                    <input type ="text" class ="form-control" aria-label = "Compétence " aria-describedby="addon-wrapping7" placeholder = "Compétence" >
+<!--                Vérifier que la compétence renseigner soit présente dans la table compétence-->
+                </div>
+                <div class = "col justify-content-center">
+                    <div class = "input-group mb-3">
+                        <button class = "btn btn-outline-secondary" type ="submit" id = "button-addon9">Valider</button>
+                    </div>
+                </div>
+                </div>
+                </form>
+            </div>
+</div>
+{% endblock %}

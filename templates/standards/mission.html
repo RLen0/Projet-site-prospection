@@ -1,0 +1,128 @@
+{% extends "template.html" %}
+
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+
+{% block title %}Mission {{mission.id_Mission}}{% endblock %}
+
+{% block template %}
+<form class="row w-100" action="{{url_for('update_mission', id=mission.id_Mission)}}" method="POST">
+    <div class="col-6 row d-flex flex-column">
+        <div class="d-flex justify-content-start align-items-center pb-1 input-group input-group-sm w-100">
+            <div class="dropdown m-0 me-2">
+                <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="{{url_for('static', filename='recycle_bin.png')}}" alt="Supprimer" style="max-height: 1rem;"></button>
+                <div class="dropdown-menu text-center">
+                    <span class="text-danger dropdown-item-text">Êtes-vous sûr ?</span>
+                    <a href="{{url_for('delete', entite='mission', id=mission.id_Mission)}}" class="btn btn-danger">Confirmer</a>
+                </div>
+            </div>
+            <span class="fw-bold input-group-text" id="id_mission_label">id</span>
+            <span type="text" class="form-control text-center w-auto m-0" style="max-width: 45px">{{ mission.id_mission }}</span>
+        </div>
+        <div class="py-1">
+            <textarea name="description" class="btn btn-light text-start fs-3 w-100 fw-bold" placeholder="Description" aria-label="description" aria-describedby="description_mission_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()">{{ mission.description }}</textarea>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="statut_mission_label">Statut</span>
+            <select class="form-select btn btn-light text-start w-100" name="statut" aria-label="statut" aria-describedby="statut_mission_label" onchange="showValidateButton()">
+              <option value="en_negociation" {% if mission.statut == 'en_negociation' %} selected {% endif %}>En négociation</option>
+              <option value="en_cours" {% if mission.statut == 'en_cours' %} selected {% endif %}>En cours</option>
+              <option value="termine" {% if mission.statut == 'termine' %} selected {% endif %}>Terminé</option>
+            </select>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="intervenant_mission_label">Intervenant</span>
+            <select class="form-select btn btn-light text-start w-100" name="intervenant" aria-label="intervenant" aria-describedby="intervenant_mission_label" onchange="showValidateButton()">
+                {% for intervenant in matching %}
+                    <option value="{{intervenant.id}}" {% if mission.id_intervenant == intervenant.id %} selected {% endif %}>{{intervenant.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="date_debut_mission_label">Date début</span>
+            <input type="text" name="date_debut" class="btn btn-light text-start w-100" placeholder="Date création" value="{{ mission.date_debut }}" aria-label="date_debut" aria-describedby="date_debut_mission_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="date_fin_mission_label">Date fin</span>
+            <input type="text" name="date_fin" class="btn btn-light text-start w-100" placeholder="Date fin" value="{{ mission.date_fin }}" aria-label="date_fin" aria-describedby="date_fin_mission_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <button type="submit" id ="validate" class="btn btn-outline-success my-2 w-75 align-self-center fade hide">Valider les modifications</button>
+    </div>
+    <div class="col-6">
+    <div class="pt-3 py-1 w-100 h-100 pb-3">
+            <span class="fw-bold w-100 h-100" id="competence_mission_label">Compétence</span>
+                {% for comp in list_competences %}
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="value={{comp.id_competence}}" {% if into(comp.id_competence,competences_mission) %} selected {% endif %}/>
+                        {{comp.competence}}
+                      </label>
+                    </div>
+                {% endfor %}
+<!--            <span class="fw-bold w-100 h-100" id="competence_mission_label">Compétence</span>-->
+<!--            <select class="form-select text-start w-100 h-100" style="height: 20rem;" name="competence" aria-label="competence" aria-describedby="competence_mission_label" onchange="showValidateButton()" multiple>-->
+<!--                {% for comp in list_competences %}-->
+<!--                    <option value={{comp.id_competence}} {% if comp.id_competence in competences_mission %} selected {% endif %}>{{comp.competence}}</option>-->
+<!--                {% endfor %}-->
+<!--            </select>-->
+        </div>
+    </div>
+</form>
+<div id="Documents" class="mt-3 col-12 bg-dark-subtle rounded-3 p-2" style="min-height: 200px">
+    <span class="fs-5 fst-italic">Documents de la mission</span>
+    <form action="{{url_for('import_doc', entite='mission', id=mission.id_Mission)}}" enctype="multipart/form-data" class="dropend" method="POST">
+        <button class="input-group-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Importer un nouveau document</button>
+        <div class="dropdown-menu input-group w-auto px-2">
+            <div class="d-flex">
+                <input type="file" name="files" class="dropdown-item ps-0 pe-2" multiple>
+                <input id="submit_import_btn" type="submit" value="Importer" class="input-group-text btn btn-outline-dark">
+            </div>
+        </div>
+    </form>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+        {% if errors %}
+        <div class="alert alert-danger alert-dismissible fade show w-25 my-2 rounded-3 d-flex justify-content-start align-items-start" role="alert">
+            {%- for msg in errors %}
+              <span class="w-auto">
+                {{ msg }}
+              </span>
+            {% endfor %}
+          <button type="button" class="btn-close btn w-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+    {% endwith %}
+    <ul>
+    {% for doc in docs_mission %}
+        <li class="py-1 my-0" style="max-width: fit-content" onmouseenter="showSuppr(this, true)" onmouseleave="showSuppr(this, false)">
+            <form action="{{url_for('delete_doc')}}" method="POST">
+            <a href="{{url_for('static', filename=doc.0)}}" class="link-primary me-2" download>{{doc.1}}</a>
+                <label>
+                    <input type="text" name="path" value="{{doc.0}}" hidden="hidden" class="hide hidden">
+                    <input type="text" name="from" class="dropdown-item hidden hide" value="{{url_for('mission', id=mission.id_Mission)}}" hidden="hidden">
+                </label>
+
+                <!--                    <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden><img loading="eager" longdesc="https://www.flaticon.com/free-icon/recycle-bin_7491835" style="max-height: 20px" src="{{url_for('static', filename='recycle_bin.png')}}" alt="Poubelle"></button>-->
+                <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden>Supprimer</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<script>
+    function showSuppr(item, show) {
+        console.log(item)
+        console.log(show)
+        const btns = item.getElementsByTagName("button");
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].hidden = !show;
+        }
+    }
+
+    function showValidateButton() {
+        const btn_validate = document.getElementById("validate")
+        btn_validate.classList.replace('hide', 'show')
+    }
+</script>
+{% endblock %}

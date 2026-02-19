@@ -1,0 +1,26 @@
+id_competence,competence
+1,HTML5
+2,CSS3
+3,JavaScript
+4,TypeScript
+5,React
+6,Next.js
+7,Node.js
+8,Express.js
+9,Python
+10,Django
+11,Flask
+12,SQL
+13,PostgreSQL
+14,MySQL
+15,SQLite
+16,API REST
+17,Git/GitHub
+18,Docker
+19,CI/CD
+20,UX/UI
+21,Figma
+22,WordPress
+23,SEO
+24,Accessibility
+25,Testing (Jest/Cypress)

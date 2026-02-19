@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TNS - {% block title %}ATTENTION TITRE NON DÉFINIT{% endblock %}</title>
+<!--    TODO : changer le "attention" à la fin du projet-->
+    <link href="{{url_for('static', filename='style/bootstrap.min.css')}}" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div class="container-fluid">
+    {% block main %}
+        {% include "statics/header.html" %}
+        <div class="row my-3 mb-5 pb-5">
+            {% include "statics/sidebar.html" %}
+            <div class="col-xl-10 col-12 m-0">
+                <div id="template" class="d-flex flex-wrap bg-body-secondary rounded-3 p-3 col-12">
+                    {% block template %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    {% include "statics/footer.html" %}
+</div>
+<script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+
+{% block title %}RGPD{% endblock %}
+
+<!--    TODO : on n'utilse pas chat GPT ici.
+        TODO faire : une vrai RGPD en fonction du site et de l'association-->
+
+{% block main %}
+<div class="position-absolute start-50 top-50 translate-middle h-auto col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 h-100">
+    <div class="d-flex flex-column justify-content-center align-items-center bg-body-tertiary mb-5 border border-3 border-dark rounded-3 border-opacity-50 p-lg-4 p-3">
+            <a href="/" class="me-5 align-self-start">
+                <img src="{{ url_for('static', filename ='logo_tns.svg') }}" alt="Logo TNS" height="65" width="65" class="mb-3">
+            </a>
+        <div class = "text-start">
+            <p>Les données personnelles collectées via ce site sont traitées par TNS pour répondre aux finalités suivantes : </p>
+            <p>Gestion des clients/prospects, gestion des projets, suivi des intervenants et organisation interne. </p>
+            <p>Les informations sont accessibles uniquement aux membres habilités de l’association.</p>
+            <p>La durée de conservation varie de 2 à 5 ans selon le type de données. </p>
+            <p>Vous pouvez exercer vos droits RGPD (accès, rectification, suppression, portabilité, limitation) en nous contactant à contact@tnservices.fr.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

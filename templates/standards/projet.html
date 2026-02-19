@@ -1,0 +1,149 @@
+{% extends "template.html" %}
+
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+
+{% block title %}Projet {{projet.id_Projet}} ({{projet.titre}}){% endblock %}
+
+{% block template %}
+<div class="col-4">
+    <form class="row d-flex flex-column w-100" action="{{url_for('update_projet', id=projet.id_Projet)}}" method="POST">
+        <div class="d-flex justify-content-start align-items-center pb-1 input-group input-group-sm w-100">
+            <div class="dropdown m-0 me-2">
+                <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="{{url_for('static', filename='recycle_bin.png')}}" alt="Supprimer" style="max-height: 1rem;"></button>
+                <div class="dropdown-menu text-center">
+                    <span class="text-danger dropdown-item-text">Êtes-vous sûr ?</span>
+                    <a href="{{url_for('delete', entite='projet', id=projet.id_Projet)}}" class="btn btn-danger">Confirmer</a>
+                </div>
+            </div>
+            <span class="fw-bold input-group-text" id="id_projet_label">id</span>
+            <span type="text" class="form-control text-center w-auto m-0" style="max-width: 45px">{{ projet.id_projet }}</span>
+        </div>
+        <div class="py-1">
+            <input type="text" name="titre" class="btn btn-light text-start fs-1 w-100 fw-bold" placeholder="Titre" value="{{ projet.titre }}" aria-label="titre" aria-describedby="titre_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="description_projet_label">Description</span>
+            <textarea name="description" class="btn btn-light text-start w-100" placeholder="Description" aria-label="description" aria-describedby="description_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()">{{ projet.description }}</textarea>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="attentes_projet_label">Attentes</span>
+            <textarea name="attentes" class="btn btn-light text-start w-100" placeholder="Attentes" aria-label="attentes" aria-describedby="attentes_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()">{{ projet.attentes }}</textarea>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="cdp_projet_label">Chef de projet</span>
+            <input type="text" name="cdp" class="btn btn-light text-start w-100" placeholder="Chef de projet" value="{{ projet.cdp }}" aria-label="cdp" aria-describedby="cdp_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="statut_projet_label">Statut</span>
+            <select class="form-select btn btn-light text-start w-100" name="statut" aria-label="statut" aria-describedby="statut_projet_label" onchange="showValidateButton()">
+              <option value="en_negociation" {% if projet.statut == 'en_negociation' %} selected {% endif %}>En négociation</option>
+              <option value="en_cours" {% if projet.statut == 'en_cours' %} selected {% endif %}>En cours</option>
+              <option value="en_attente_de_paiement" {% if projet.statut == 'en_attente_de_paiement' %} selected {% endif %}>En attente de paiement</option>
+              <option value="termine" {% if projet.statut == 'termine' %} selected {% endif %}>Terminé</option>
+            </select>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="remuneration_projet_label">Rémunération</span>
+            <input type="text" name="remuneration" class="btn btn-light text-start w-100" placeholder="Rémunération" value="{{ projet.remuneration }}" aria-label="remuneration" aria-describedby="remuneration_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="budget_projet_label">Budget</span>
+            <input type="text" name="budget" class="btn btn-light text-start w-100" placeholder="Budget" value="{{ projet.budget }}" aria-label="budget" aria-describedby="budget_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="date_creation_projet_label">Date création</span>
+            <input type="text" name="date_creation" class="btn btn-light text-start w-100" placeholder="Date création" value="{{ projet.date_creation }}" aria-label="date_creation" aria-describedby="date_creation_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="date_fin_projet_label">Date fin</span>
+            <input type="text" name="date_fin" class="btn btn-light text-start w-100" placeholder="Date fin" value="{{ projet.date_fin }}" aria-label="date_fin" aria-describedby="date_fin_projet_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <button type="submit" id ="validate" class="btn btn-outline-success my-2 w-75 align-self-center fade hide">Valider les modifications</button>
+    </form>
+</div>
+<div class="col-8">
+    <span class="fs-5 ms-2 fst-italic">
+        Missions de {{projet.nom}}
+    </span>
+    {% if missions_projet %}
+    <table class="mt-1 table table-striped border-dark">
+        <thead>
+            <tr class="border-top-0">
+            {% for data in missions_projet.0.data.keys() %}
+                <th class="">
+                    {{data|capitalize}}
+                </th>
+            {% endfor %}
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        {% for mission in missions_projet %}
+        <tr>
+            {% for item in mission.data.items() %}
+                <td>{% if item.0 == "description" %}<a href="{{url_for('mission', id=mission.id)}}">{% endif %}{{item.1.replace('_', ' ').replace('nego', 'négo').replace('mine', 'miné')|capitalize}}{% if item.0 == "description" %}</a>{% endif %}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+<div id="Documents" class="mt-3 col-12 bg-dark-subtle rounded-3 p-2" style="min-height: 200px">
+    <span class="fs-5 fst-italic">Documents du projet</span>
+    <form action="{{url_for('import_doc', entite='projet', id=projet.id_Projet)}}" enctype="multipart/form-data" class="dropend" method="POST">
+        <button class="input-group-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Importer un nouveau document</button>
+        <div class="dropdown-menu input-group w-auto px-2">
+            <div class="d-flex">
+                <input type="file" name="files" class="dropdown-item ps-0 pe-2" multiple>
+                <input id="submit_import_btn" type="submit" value="Importer" class="input-group-text btn btn-outline-dark">
+            </div>
+        </div>
+    </form>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+        {% if errors %}
+        <div class="alert alert-danger alert-dismissible fade show w-25 my-2 rounded-3 d-flex justify-content-start align-items-start" role="alert">
+            {%- for msg in errors %}
+              <span class="w-auto">
+                {{ msg }}
+              </span>
+            {% endfor %}
+          <button type="button" class="btn-close btn w-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+    {% endwith %}
+    <ul>
+    {% for doc in docs_projet %}
+        <li class="py-1 my-0" style="max-width: fit-content" onmouseenter="showSuppr(this, true)" onmouseleave="showSuppr(this, false)">
+            <form action="{{url_for('delete_doc')}}" method="POST">
+            <a href="{{url_for('static', filename=doc.0)}}" class="link-primary me-2" download>{{doc.1}}</a>
+                <label>
+                    <input type="text" name="path" value="{{doc.0}}" hidden="hidden" class="hide hidden">
+                    <input type="text" name="from" class="dropdown-item hidden hide" value="{{url_for('projet', id=projet.id_Projet)}}" hidden="hidden">
+                </label>
+
+                <!--                    <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden><img loading="eager" longdesc="https://www.flaticon.com/free-icon/recycle-bin_7491835" style="max-height: 20px" src="{{url_for('static', filename='recycle_bin.png')}}" alt="Poubelle"></button>-->
+                <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden>Supprimer</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<script>
+    function showSuppr(item, show) {
+        console.log(item)
+        console.log(show)
+        const btns = item.getElementsByTagName("button");
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].hidden = !show;
+        }
+    }
+
+    function showValidateButton() {
+        const btn_validate = document.getElementById("validate")
+        btn_validate.classList.replace('hide', 'show')
+    }
+</script>
+{% endblock %}

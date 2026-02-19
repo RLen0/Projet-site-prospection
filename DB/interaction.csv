@@ -1,0 +1,361 @@
+id_interaction,date,id_projet,id_client,id_intervenant,resume,prochaine_interaction,type_interaction
+1,2025-10-24,2,17,84,Suivi projet web (Site e-commerce) avec Capgemini.,2025-11-03,email
+2,2024-10-27,64,14,50,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-11-09,appel
+3,2025-01-29,27,20,82,Suivi projet web (Refonte UI/UX) avec EDF.,2025-02-13,réunion
+4,2025-01-08,13,4,25,Suivi projet web (Refonte UI/UX) avec Société Générale.,2025-01-29,appel
+5,2024-03-12,72,16,116,Suivi projet web (Audit accessibilité) avec Crédit Agricole.,2024-03-21,réunion
+6,2025-10-15,60,2,34,Suivi projet web (Site vitrine) avec Michelin.,2025-10-29,ticket
+7,2024-07-27,21,5,93,Suivi projet web (Maintenance WordPress) avec Schneider Electric.,2024-08-13,réunion
+8,2025-09-06,60,2,137,Suivi projet web (Site vitrine) avec Michelin.,2025-09-23,réunion
+9,2024-12-06,64,14,118,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-12-22,appel
+10,2025-11-30,52,15,64,Suivi projet web (Site e-commerce) avec L'Oréal.,2025-12-07,réunion
+11,2024-12-15,24,4,135,Suivi projet web (Site e-commerce) avec Société Générale.,2025-01-01,réunion
+12,2025-12-11,22,14,91,Suivi projet web (Intégration API) avec BNP Paribas.,2025-12-24,email
+13,2024-05-24,34,6,126,Suivi projet web (Site vitrine) avec Kering.,2024-06-10,email
+14,2024-10-11,14,12,112,Suivi projet web (Optimisation SEO) avec Bouygues Telecom.,2024-10-18,visio
+15,2025-06-08,28,4,134,Suivi projet web (Intégration API) avec Société Générale.,2025-06-17,appel
+16,2024-04-14,68,9,5,Suivi projet web (Développement Back-office) avec Decathlon.,2024-05-04,appel
+17,2024-06-15,67,19,70,Suivi projet web (Intégration API) avec Airbus.,2024-06-26,appel
+18,2025-01-03,27,20,46,Suivi projet web (Refonte UI/UX) avec EDF.,2025-01-21,email
+19,2025-11-19,8,18,63,Suivi projet web (Développement Back-office) avec Orange Business.,2025-11-30,appel
+20,2025-01-28,66,10,33,Suivi projet web (Maintenance WordPress) avec Carrefour.,2025-02-10,visio
+21,2025-11-22,56,11,7,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-12-02,email
+22,2025-11-13,15,17,70,Suivi projet web (Audit accessibilité) avec Capgemini.,2025-11-21,réunion
+23,2025-07-19,71,8,43,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-07-29,ticket
+24,2025-06-19,6,20,130,Suivi projet web (Développement Back-office) avec EDF.,2025-07-10,appel
+25,2025-12-01,55,1,82,Suivi projet web (Intégration API) avec Thales.,2025-12-13,appel
+26,2025-09-28,57,15,77,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-10-10,email
+27,2024-10-13,39,19,108,Suivi projet web (Développement Back-office) avec Airbus.,2024-10-27,réunion
+28,2025-10-04,57,15,122,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-10-17,email
+29,2024-05-09,5,14,60,Suivi projet web (Audit accessibilité) avec BNP Paribas.,2024-05-24,réunion
+30,2024-03-18,68,9,70,Suivi projet web (Développement Back-office) avec Decathlon.,2024-04-07,appel
+31,2025-06-27,71,8,64,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-07-14,ticket
+32,2024-04-24,1,19,5,Suivi projet web (Site e-commerce) avec Airbus.,2024-05-05,ticket
+33,2025-05-17,42,15,122,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-05-27,ticket
+34,2025-05-09,28,4,47,Suivi projet web (Intégration API) avec Société Générale.,2025-05-27,réunion
+35,2025-09-25,58,1,6,Suivi projet web (Intégration API) avec Thales.,2025-10-02,visio
+36,2025-06-10,28,4,5,Suivi projet web (Intégration API) avec Société Générale.,2025-06-18,réunion
+37,2024-09-09,4,1,81,Suivi projet web (Site vitrine) avec Thales.,2024-09-21,ticket
+38,2025-02-09,70,9,15,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-27,email
+39,2025-06-16,42,15,116,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-06-25,appel
+40,2025-12-30,22,14,93,Suivi projet web (Intégration API) avec BNP Paribas.,2026-01-06,visio
+41,2025-12-16,15,17,17,Suivi projet web (Audit accessibilité) avec Capgemini.,2025-12-23,ticket
+42,2024-06-05,43,15,55,Suivi projet web (Optimisation SEO) avec L'Oréal.,2024-06-15,email
+43,2025-05-03,3,12,42,Suivi projet web (Développement Back-office) avec Bouygues Telecom.,2025-05-15,réunion
+44,2024-08-07,45,8,21,Suivi projet web (Développement Back-office) avec Sanofi.,2024-08-27,email
+45,2024-05-17,19,16,42,Suivi projet web (Maintenance WordPress) avec Crédit Agricole.,2024-05-31,appel
+46,2025-03-13,65,3,23,Suivi projet web (Dashboard analytics) avec Vinci.,2025-03-20,réunion
+47,2025-04-21,29,3,120,Suivi projet web (Développement Back-office) avec Vinci.,2025-05-08,visio
+48,2025-11-17,10,11,32,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-12-06,ticket
+49,2025-05-05,31,11,91,Suivi projet web (Développement Back-office) avec La Poste.,2025-05-14,réunion
+50,2024-05-30,50,8,35,Suivi projet web (Intégration API) avec Sanofi.,2024-06-09,visio
+51,2024-11-21,9,19,92,Suivi projet web (Audit accessibilité) avec Airbus.,2024-12-09,email
+52,2025-12-25,22,14,126,Suivi projet web (Intégration API) avec BNP Paribas.,2026-01-07,réunion
+53,2025-09-24,57,15,47,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-10-07,appel
+54,2024-05-25,23,10,59,Suivi projet web (Landing page) avec Carrefour.,2024-06-14,visio
+55,2025-05-02,35,1,57,Suivi projet web (Maintenance WordPress) avec Thales.,2025-05-20,ticket
+56,2025-03-08,75,13,127,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-03-20,email
+57,2025-03-01,78,14,69,Suivi projet web (Refonte UI/UX) avec BNP Paribas.,2025-03-22,email
+58,2024-10-01,47,4,83,Suivi projet web (Site e-commerce) avec Société Générale.,2024-10-19,email
+59,2024-12-15,24,4,86,Suivi projet web (Site e-commerce) avec Société Générale.,2024-12-28,réunion
+60,2024-03-10,72,16,74,Suivi projet web (Audit accessibilité) avec Crédit Agricole.,2024-03-24,visio
+61,2025-08-03,71,8,98,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-08-12,appel
+62,2025-01-13,24,4,85,Suivi projet web (Site e-commerce) avec Société Générale.,2025-02-01,email
+63,2025-07-01,6,20,6,Suivi projet web (Développement Back-office) avec EDF.,2025-07-21,email
+64,2024-10-01,47,4,92,Suivi projet web (Site e-commerce) avec Société Générale.,2024-10-09,email
+65,2025-01-11,27,20,54,Suivi projet web (Refonte UI/UX) avec EDF.,2025-01-18,visio
+66,2024-09-30,4,1,3,Suivi projet web (Site vitrine) avec Thales.,2024-10-15,ticket
+67,2024-02-09,59,2,126,Suivi projet web (Dashboard analytics) avec Michelin.,2024-02-29,email
+68,2025-10-31,18,7,68,Suivi projet web (Site e-commerce) avec Eiffage.,2025-11-14,visio
+69,2025-05-17,20,14,62,Suivi projet web (Intégration API) avec BNP Paribas.,2025-05-26,visio
+70,2025-01-21,36,4,11,Suivi projet web (Landing page) avec Société Générale.,2025-02-08,réunion
+71,2025-04-06,35,1,135,Suivi projet web (Maintenance WordPress) avec Thales.,2025-04-15,appel
+72,2024-06-01,12,15,113,Suivi projet web (Dashboard analytics) avec L'Oréal.,2024-06-15,appel
+73,2025-11-17,17,13,111,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-11-24,visio
+74,2024-12-19,40,1,12,Suivi projet web (Développement Back-office) avec Thales.,2024-12-30,visio
+75,2025-12-30,63,20,88,Suivi projet web (Maintenance WordPress) avec EDF.,2026-01-07,ticket
+76,2024-08-12,73,11,77,Suivi projet web (Landing page) avec La Poste.,2024-09-01,appel
+77,2025-08-12,38,20,45,Suivi projet web (Dashboard analytics) avec EDF.,2025-08-31,visio
+78,2025-02-24,26,16,108,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-03-04,visio
+79,2025-11-06,17,13,16,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-11-13,visio
+80,2025-05-10,76,2,91,Suivi projet web (Optimisation SEO) avec Michelin.,2025-05-28,ticket
+81,2024-11-12,64,14,127,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-11-23,visio
+82,2026-01-07,55,1,68,Suivi projet web (Intégration API) avec Thales.,2026-01-18,visio
+83,2025-06-26,6,20,62,Suivi projet web (Développement Back-office) avec EDF.,2025-07-17,ticket
+84,2025-03-26,62,10,36,Suivi projet web (Site vitrine) avec Carrefour.,2025-04-03,visio
+85,2025-02-21,32,10,68,Suivi projet web (Site vitrine) avec Carrefour.,2025-03-05,appel
+86,2025-02-23,66,10,79,Suivi projet web (Maintenance WordPress) avec Carrefour.,2025-03-10,appel
+87,2024-05-05,50,8,18,Suivi projet web (Intégration API) avec Sanofi.,2024-05-13,visio
+88,2025-08-24,48,9,136,Suivi projet web (Développement Back-office) avec Decathlon.,2025-09-14,ticket
+89,2025-09-30,57,15,77,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-10-20,ticket
+90,2024-06-13,16,18,34,Suivi projet web (Site vitrine) avec Orange Business.,2024-06-22,appel
+91,2024-10-11,14,12,24,Suivi projet web (Optimisation SEO) avec Bouygues Telecom.,2024-10-23,email
+92,2025-01-29,70,9,22,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-06,visio
+93,2025-10-13,17,13,95,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-10-28,visio
+94,2025-11-20,22,14,103,Suivi projet web (Intégration API) avec BNP Paribas.,2025-12-02,visio
+95,2025-05-29,41,14,61,Suivi projet web (Site e-commerce) avec BNP Paribas.,2025-06-06,ticket
+96,2024-06-02,67,19,122,Suivi projet web (Intégration API) avec Airbus.,2024-06-23,appel
+97,2025-10-05,48,9,123,Suivi projet web (Développement Back-office) avec Decathlon.,2025-10-23,visio
+98,2025-05-31,44,17,58,Suivi projet web (Maintenance WordPress) avec Capgemini.,2025-06-21,ticket
+99,2024-10-17,80,5,14,Suivi projet web (Refonte UI/UX) avec Schneider Electric.,2024-10-27,email
+100,2025-02-04,25,7,81,Suivi projet web (Site vitrine) avec Eiffage.,2025-02-16,ticket
+101,2025-04-18,35,1,90,Suivi projet web (Maintenance WordPress) avec Thales.,2025-05-09,réunion
+102,2024-07-22,73,11,12,Suivi projet web (Landing page) avec La Poste.,2024-07-29,réunion
+103,2024-12-19,64,14,74,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2025-01-01,réunion
+104,2025-08-18,71,8,4,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-09-07,visio
+105,2025-11-02,8,18,17,Suivi projet web (Développement Back-office) avec Orange Business.,2025-11-17,ticket
+106,2025-05-14,11,19,20,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-04,réunion
+107,2025-12-12,10,11,46,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-12-27,réunion
+108,2024-09-03,77,9,137,Suivi projet web (Audit accessibilité) avec Decathlon.,2024-09-18,visio
+109,2025-03-10,29,3,133,Suivi projet web (Développement Back-office) avec Vinci.,2025-03-22,email
+110,2024-10-13,47,4,78,Suivi projet web (Site e-commerce) avec Société Générale.,2024-10-27,ticket
+111,2025-05-29,53,13,70,Suivi projet web (Site e-commerce) avec BlaBlaCar.,2025-06-08,email
+112,2024-10-23,39,19,61,Suivi projet web (Développement Back-office) avec Airbus.,2024-11-03,email
+113,2025-04-09,54,1,16,Suivi projet web (Dashboard analytics) avec Thales.,2025-04-17,email
+114,2025-07-08,71,8,12,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-07-15,email
+115,2024-03-31,68,9,55,Suivi projet web (Développement Back-office) avec Decathlon.,2024-04-07,ticket
+116,2025-11-16,17,13,72,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-11-24,email
+117,2024-09-20,4,1,31,Suivi projet web (Site vitrine) avec Thales.,2024-10-01,ticket
+118,2025-10-12,17,13,84,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-10-19,email
+119,2024-07-01,46,1,85,Suivi projet web (Site vitrine) avec Thales.,2024-07-09,ticket
+120,2026-01-01,22,14,108,Suivi projet web (Intégration API) avec BNP Paribas.,2026-01-09,ticket
+121,2025-02-23,70,9,20,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-03-09,réunion
+122,2025-01-28,26,16,90,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-02-10,email
+123,2025-02-01,36,4,83,Suivi projet web (Landing page) avec Société Générale.,2025-02-17,visio
+124,2024-12-27,40,1,95,Suivi projet web (Développement Back-office) avec Thales.,2025-01-15,visio
+125,2025-03-31,62,10,13,Suivi projet web (Site vitrine) avec Carrefour.,2025-04-21,ticket
+126,2024-06-08,23,10,100,Suivi projet web (Landing page) avec Carrefour.,2024-06-25,appel
+127,2025-05-13,3,12,123,Suivi projet web (Développement Back-office) avec Bouygues Telecom.,2025-05-23,réunion
+128,2024-06-10,43,15,35,Suivi projet web (Optimisation SEO) avec L'Oréal.,2024-06-23,visio
+129,2024-03-11,72,16,17,Suivi projet web (Audit accessibilité) avec Crédit Agricole.,2024-03-23,ticket
+130,2025-06-11,33,19,56,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-24,appel
+131,2024-10-01,47,4,109,Suivi projet web (Site e-commerce) avec Société Générale.,2024-10-12,email
+132,2025-11-21,55,1,105,Suivi projet web (Intégration API) avec Thales.,2025-11-29,visio
+133,2024-05-26,67,19,74,Suivi projet web (Intégration API) avec Airbus.,2024-06-10,appel
+134,2025-05-25,76,2,100,Suivi projet web (Optimisation SEO) avec Michelin.,2025-06-13,visio
+135,2025-06-12,3,12,116,Suivi projet web (Développement Back-office) avec Bouygues Telecom.,2025-06-28,email
+136,2025-06-01,6,20,70,Suivi projet web (Développement Back-office) avec EDF.,2025-06-11,appel
+137,2025-03-26,54,1,87,Suivi projet web (Dashboard analytics) avec Thales.,2025-04-15,visio
+138,2025-02-04,70,9,63,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-24,email
+139,2024-05-02,5,14,121,Suivi projet web (Audit accessibilité) avec BNP Paribas.,2024-05-19,réunion
+140,2024-12-04,9,19,115,Suivi projet web (Audit accessibilité) avec Airbus.,2024-12-19,appel
+141,2025-11-15,56,11,86,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-12-03,visio
+142,2025-05-03,20,14,5,Suivi projet web (Intégration API) avec BNP Paribas.,2025-05-13,visio
+143,2025-01-28,70,9,51,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-08,ticket
+144,2024-09-11,45,8,5,Suivi projet web (Développement Back-office) avec Sanofi.,2024-09-26,email
+145,2024-04-20,1,19,13,Suivi projet web (Site e-commerce) avec Airbus.,2024-05-10,appel
+146,2025-12-02,22,14,130,Suivi projet web (Intégration API) avec BNP Paribas.,2025-12-10,visio
+147,2025-12-15,55,1,61,Suivi projet web (Intégration API) avec Thales.,2025-12-24,visio
+148,2024-10-06,47,4,125,Suivi projet web (Site e-commerce) avec Société Générale.,2024-10-17,visio
+149,2025-11-08,17,13,135,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-11-26,appel
+150,2024-05-28,19,16,78,Suivi projet web (Maintenance WordPress) avec Crédit Agricole.,2024-06-15,appel
+151,2024-10-19,39,19,56,Suivi projet web (Développement Back-office) avec Airbus.,2024-10-29,visio
+152,2025-02-04,75,13,4,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-02-21,réunion
+153,2025-04-11,32,10,43,Suivi projet web (Site vitrine) avec Carrefour.,2025-04-18,appel
+154,2025-11-25,52,15,60,Suivi projet web (Site e-commerce) avec L'Oréal.,2025-12-09,visio
+155,2024-10-25,39,19,103,Suivi projet web (Développement Back-office) avec Airbus.,2024-11-02,visio
+156,2024-05-19,43,15,124,Suivi projet web (Optimisation SEO) avec L'Oréal.,2024-05-27,email
+157,2025-03-02,78,14,114,Suivi projet web (Refonte UI/UX) avec BNP Paribas.,2025-03-10,ticket
+158,2025-04-27,20,14,15,Suivi projet web (Intégration API) avec BNP Paribas.,2025-05-18,ticket
+159,2025-01-07,27,20,44,Suivi projet web (Refonte UI/UX) avec EDF.,2025-01-19,appel
+160,2024-07-10,23,10,134,Suivi projet web (Landing page) avec Carrefour.,2024-07-30,visio
+161,2025-08-03,74,17,66,Suivi projet web (Intégration API) avec Capgemini.,2025-08-18,visio
+162,2024-05-19,67,19,63,Suivi projet web (Intégration API) avec Airbus.,2024-05-30,réunion
+163,2024-04-28,67,19,32,Suivi projet web (Intégration API) avec Airbus.,2024-05-08,réunion
+164,2024-08-14,4,1,11,Suivi projet web (Site vitrine) avec Thales.,2024-08-31,ticket
+165,2025-05-14,31,11,99,Suivi projet web (Développement Back-office) avec La Poste.,2025-05-21,ticket
+166,2025-04-16,35,1,20,Suivi projet web (Maintenance WordPress) avec Thales.,2025-04-27,email
+167,2024-10-13,14,12,4,Suivi projet web (Optimisation SEO) avec Bouygues Telecom.,2024-10-28,ticket
+168,2024-04-25,5,14,65,Suivi projet web (Audit accessibilité) avec BNP Paribas.,2024-05-09,réunion
+169,2025-02-25,32,10,56,Suivi projet web (Site vitrine) avec Carrefour.,2025-03-15,réunion
+170,2024-11-02,9,19,69,Suivi projet web (Audit accessibilité) avec Airbus.,2024-11-10,visio
+171,2025-08-10,37,15,125,Suivi projet web (Site vitrine) avec L'Oréal.,2025-08-21,email
+172,2025-12-16,22,14,57,Suivi projet web (Intégration API) avec BNP Paribas.,2025-12-25,appel
+173,2025-10-24,2,17,25,Suivi projet web (Site e-commerce) avec Capgemini.,2025-11-09,visio
+174,2024-06-01,34,6,107,Suivi projet web (Site vitrine) avec Kering.,2024-06-17,ticket
+175,2025-05-13,35,1,53,Suivi projet web (Maintenance WordPress) avec Thales.,2025-05-23,ticket
+176,2026-01-06,10,11,136,Suivi projet web (Maintenance WordPress) avec La Poste.,2026-01-13,appel
+177,2024-04-21,5,14,129,Suivi projet web (Audit accessibilité) avec BNP Paribas.,2024-05-05,visio
+178,2025-01-21,61,11,114,Suivi projet web (Site e-commerce) avec La Poste.,2025-01-30,visio
+179,2025-04-28,31,11,9,Suivi projet web (Développement Back-office) avec La Poste.,2025-05-17,ticket
+180,2024-06-14,16,18,55,Suivi projet web (Site vitrine) avec Orange Business.,2024-06-25,visio
+181,2025-06-30,33,19,6,Suivi projet web (Développement Back-office) avec Airbus.,2025-07-07,email
+182,2025-02-07,27,20,70,Suivi projet web (Refonte UI/UX) avec EDF.,2025-02-24,réunion
+183,2024-12-08,40,1,73,Suivi projet web (Développement Back-office) avec Thales.,2024-12-25,ticket
+184,2024-09-14,77,9,8,Suivi projet web (Audit accessibilité) avec Decathlon.,2024-10-03,ticket
+185,2024-09-03,45,8,43,Suivi projet web (Développement Back-office) avec Sanofi.,2024-09-16,ticket
+186,2024-05-22,46,1,18,Suivi projet web (Site vitrine) avec Thales.,2024-06-02,appel
+187,2025-11-19,7,12,52,Suivi projet web (Site e-commerce) avec Bouygues Telecom.,2025-12-10,email
+188,2024-11-09,9,19,24,Suivi projet web (Audit accessibilité) avec Airbus.,2024-11-29,email
+189,2024-09-09,45,8,123,Suivi projet web (Développement Back-office) avec Sanofi.,2024-09-17,visio
+190,2025-10-05,48,9,106,Suivi projet web (Développement Back-office) avec Decathlon.,2025-10-23,appel
+191,2024-08-05,45,8,106,Suivi projet web (Développement Back-office) avec Sanofi.,2024-08-18,email
+192,2025-05-09,31,11,34,Suivi projet web (Développement Back-office) avec La Poste.,2025-05-19,ticket
+193,2025-03-18,78,14,135,Suivi projet web (Refonte UI/UX) avec BNP Paribas.,2025-03-31,visio
+194,2025-12-05,2,17,138,Suivi projet web (Site e-commerce) avec Capgemini.,2025-12-22,visio
+195,2024-07-10,69,7,42,Suivi projet web (Maintenance WordPress) avec Eiffage.,2024-07-30,ticket
+196,2025-02-15,54,1,24,Suivi projet web (Dashboard analytics) avec Thales.,2025-02-22,ticket
+197,2025-11-11,7,12,130,Suivi projet web (Site e-commerce) avec Bouygues Telecom.,2025-11-27,visio
+198,2024-09-12,80,5,84,Suivi projet web (Refonte UI/UX) avec Schneider Electric.,2024-09-28,réunion
+199,2025-01-23,13,4,53,Suivi projet web (Refonte UI/UX) avec Société Générale.,2025-02-08,email
+200,2025-12-11,15,17,100,Suivi projet web (Audit accessibilité) avec Capgemini.,2025-12-30,réunion
+201,2025-09-06,60,2,48,Suivi projet web (Site vitrine) avec Michelin.,2025-09-20,email
+202,2025-12-19,22,14,35,Suivi projet web (Intégration API) avec BNP Paribas.,2026-01-06,appel
+203,2026-01-03,10,11,109,Suivi projet web (Maintenance WordPress) avec La Poste.,2026-01-11,appel
+204,2026-01-19,63,20,58,Suivi projet web (Maintenance WordPress) avec EDF.,2026-02-02,réunion
+205,2025-04-01,65,3,139,Suivi projet web (Dashboard analytics) avec Vinci.,2025-04-15,ticket
+206,2025-10-30,57,15,97,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-11-07,appel
+207,2025-02-18,26,16,32,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-02-26,ticket
+208,2024-11-06,64,14,36,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-11-20,appel
+209,2025-01-05,24,4,120,Suivi projet web (Site e-commerce) avec Société Générale.,2025-01-24,ticket
+210,2024-12-29,36,4,99,Suivi projet web (Landing page) avec Société Générale.,2025-01-11,réunion
+211,2025-03-02,66,10,94,Suivi projet web (Maintenance WordPress) avec Carrefour.,2025-03-16,visio
+212,2024-08-01,73,11,109,Suivi projet web (Landing page) avec La Poste.,2024-08-15,appel
+213,2024-09-07,45,8,8,Suivi projet web (Développement Back-office) avec Sanofi.,2024-09-26,appel
+214,2024-06-19,50,8,128,Suivi projet web (Intégration API) avec Sanofi.,2024-07-06,réunion
+215,2025-05-07,11,19,98,Suivi projet web (Développement Back-office) avec Airbus.,2025-05-24,réunion
+216,2024-06-18,23,10,139,Suivi projet web (Landing page) avec Carrefour.,2024-07-01,visio
+217,2025-05-20,20,14,66,Suivi projet web (Intégration API) avec BNP Paribas.,2025-06-10,visio
+218,2025-01-26,70,9,139,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-10,ticket
+219,2025-05-10,42,15,62,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-05-27,appel
+220,2024-10-08,80,5,96,Suivi projet web (Refonte UI/UX) avec Schneider Electric.,2024-10-28,visio
+221,2025-01-29,40,1,131,Suivi projet web (Développement Back-office) avec Thales.,2025-02-18,appel
+222,2025-07-28,37,15,39,Suivi projet web (Site vitrine) avec L'Oréal.,2025-08-04,visio
+223,2025-04-01,62,10,129,Suivi projet web (Site vitrine) avec Carrefour.,2025-04-10,visio
+224,2024-07-11,73,11,12,Suivi projet web (Landing page) avec La Poste.,2024-07-25,réunion
+225,2025-01-03,70,9,7,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-01-13,ticket
+226,2025-07-15,71,8,119,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-07-26,appel
+227,2025-11-22,49,20,37,Suivi projet web (Refonte UI/UX) avec EDF.,2025-12-04,réunion
+228,2024-05-25,19,16,54,Suivi projet web (Maintenance WordPress) avec Crédit Agricole.,2024-06-06,visio
+229,2024-06-02,1,19,83,Suivi projet web (Site e-commerce) avec Airbus.,2024-06-13,visio
+230,2025-11-06,15,17,69,Suivi projet web (Audit accessibilité) avec Capgemini.,2025-11-19,réunion
+231,2025-04-16,11,19,63,Suivi projet web (Développement Back-office) avec Airbus.,2025-04-26,réunion
+232,2024-12-20,9,19,103,Suivi projet web (Audit accessibilité) avec Airbus.,2025-01-08,email
+233,2024-07-12,16,18,20,Suivi projet web (Site vitrine) avec Orange Business.,2024-07-24,réunion
+234,2024-07-08,16,18,120,Suivi projet web (Site vitrine) avec Orange Business.,2024-07-24,visio
+235,2026-01-03,10,11,97,Suivi projet web (Maintenance WordPress) avec La Poste.,2026-01-11,email
+236,2025-01-11,70,9,18,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-01-30,visio
+237,2025-07-08,37,15,65,Suivi projet web (Site vitrine) avec L'Oréal.,2025-07-23,réunion
+238,2025-02-22,62,10,5,Suivi projet web (Site vitrine) avec Carrefour.,2025-03-02,appel
+239,2025-02-17,54,1,115,Suivi projet web (Dashboard analytics) avec Thales.,2025-03-04,email
+240,2025-05-30,33,19,126,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-09,visio
+241,2024-06-06,43,15,70,Suivi projet web (Optimisation SEO) avec L'Oréal.,2024-06-13,ticket
+242,2025-06-27,33,19,84,Suivi projet web (Développement Back-office) avec Airbus.,2025-07-07,appel
+243,2025-09-23,48,9,140,Suivi projet web (Développement Back-office) avec Decathlon.,2025-10-11,ticket
+244,2025-09-03,38,20,70,Suivi projet web (Dashboard analytics) avec EDF.,2025-09-22,ticket
+245,2025-04-28,41,14,132,Suivi projet web (Site e-commerce) avec BNP Paribas.,2025-05-07,visio
+246,2025-11-23,52,15,50,Suivi projet web (Site e-commerce) avec L'Oréal.,2025-11-30,email
+247,2025-02-12,70,9,122,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-23,ticket
+248,2025-03-08,78,14,138,Suivi projet web (Refonte UI/UX) avec BNP Paribas.,2025-03-24,ticket
+249,2025-12-29,8,18,72,Suivi projet web (Développement Back-office) avec Orange Business.,2026-01-05,ticket
+250,2025-01-12,26,16,120,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-01-31,appel
+251,2024-09-05,80,5,10,Suivi projet web (Refonte UI/UX) avec Schneider Electric.,2024-09-20,ticket
+252,2024-11-14,39,19,75,Suivi projet web (Développement Back-office) avec Airbus.,2024-11-24,réunion
+253,2025-03-11,75,13,120,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-03-26,réunion
+254,2025-05-18,31,11,33,Suivi projet web (Développement Back-office) avec La Poste.,2025-06-05,réunion
+255,2025-12-30,55,1,113,Suivi projet web (Intégration API) avec Thales.,2026-01-15,réunion
+256,2024-12-05,40,1,59,Suivi projet web (Développement Back-office) avec Thales.,2024-12-15,réunion
+257,2024-11-23,14,12,69,Suivi projet web (Optimisation SEO) avec Bouygues Telecom.,2024-12-11,ticket
+258,2025-01-20,24,4,4,Suivi projet web (Site e-commerce) avec Société Générale.,2025-02-05,appel
+259,2024-09-07,4,1,54,Suivi projet web (Site vitrine) avec Thales.,2024-09-21,visio
+260,2024-07-17,12,15,16,Suivi projet web (Dashboard analytics) avec L'Oréal.,2024-08-02,email
+261,2025-04-24,78,14,70,Suivi projet web (Refonte UI/UX) avec BNP Paribas.,2025-05-01,email
+262,2025-05-18,11,19,97,Suivi projet web (Développement Back-office) avec Airbus.,2025-05-25,email
+263,2025-04-11,54,1,112,Suivi projet web (Dashboard analytics) avec Thales.,2025-04-19,ticket
+264,2025-02-13,70,9,84,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-22,ticket
+265,2024-05-02,1,19,88,Suivi projet web (Site e-commerce) avec Airbus.,2024-05-20,visio
+266,2024-12-04,64,14,21,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-12-11,appel
+267,2025-11-21,18,7,109,Suivi projet web (Site e-commerce) avec Eiffage.,2025-12-09,ticket
+268,2025-01-15,70,9,72,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-01-31,email
+269,2024-05-15,19,16,132,Suivi projet web (Maintenance WordPress) avec Crédit Agricole.,2024-06-04,visio
+270,2024-04-28,30,13,133,Suivi projet web (Optimisation SEO) avec BlaBlaCar.,2024-05-11,réunion
+271,2024-06-05,46,1,73,Suivi projet web (Site vitrine) avec Thales.,2024-06-18,visio
+272,2024-05-28,12,15,119,Suivi projet web (Dashboard analytics) avec L'Oréal.,2024-06-04,visio
+273,2025-04-08,31,11,20,Suivi projet web (Développement Back-office) avec La Poste.,2025-04-28,appel
+274,2024-05-28,46,1,86,Suivi projet web (Site vitrine) avec Thales.,2024-06-09,réunion
+275,2024-05-06,30,13,25,Suivi projet web (Optimisation SEO) avec BlaBlaCar.,2024-05-21,réunion
+276,2025-07-03,6,20,120,Suivi projet web (Développement Back-office) avec EDF.,2025-07-22,visio
+277,2025-02-19,75,13,28,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-03-08,réunion
+278,2025-02-09,75,13,125,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-02-28,réunion
+279,2025-01-08,24,4,50,Suivi projet web (Site e-commerce) avec Société Générale.,2025-01-28,email
+280,2025-11-16,15,17,40,Suivi projet web (Audit accessibilité) avec Capgemini.,2025-11-26,visio
+281,2025-05-06,53,13,135,Suivi projet web (Site e-commerce) avec BlaBlaCar.,2025-05-20,appel
+282,2024-11-04,64,14,94,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-11-25,email
+283,2026-01-04,49,20,124,Suivi projet web (Refonte UI/UX) avec EDF.,2026-01-13,visio
+284,2025-01-28,66,10,4,Suivi projet web (Maintenance WordPress) avec Carrefour.,2025-02-04,ticket
+285,2024-12-25,40,1,71,Suivi projet web (Développement Back-office) avec Thales.,2025-01-06,email
+286,2024-08-06,73,11,31,Suivi projet web (Landing page) avec La Poste.,2024-08-24,ticket
+287,2025-11-20,18,7,42,Suivi projet web (Site e-commerce) avec Eiffage.,2025-11-27,réunion
+288,2024-08-03,69,7,70,Suivi projet web (Maintenance WordPress) avec Eiffage.,2024-08-16,visio
+289,2024-04-14,1,19,23,Suivi projet web (Site e-commerce) avec Airbus.,2024-05-01,ticket
+290,2025-06-13,6,20,136,Suivi projet web (Développement Back-office) avec EDF.,2025-06-23,email
+291,2025-06-03,28,4,101,Suivi projet web (Intégration API) avec Société Générale.,2025-06-13,email
+292,2025-02-04,70,9,112,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-12,réunion
+293,2025-05-24,33,19,70,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-05,ticket
+294,2025-05-11,53,13,55,Suivi projet web (Site e-commerce) avec BlaBlaCar.,2025-05-30,visio
+295,2025-09-05,48,9,1,Suivi projet web (Développement Back-office) avec Decathlon.,2025-09-14,visio
+296,2024-11-21,64,14,35,Suivi projet web (Maintenance WordPress) avec BNP Paribas.,2024-11-28,ticket
+297,2024-10-04,39,19,23,Suivi projet web (Développement Back-office) avec Airbus.,2024-10-13,ticket
+298,2024-04-28,68,9,82,Suivi projet web (Développement Back-office) avec Decathlon.,2024-05-18,réunion
+299,2025-10-27,56,11,115,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-11-15,appel
+300,2025-06-24,76,2,72,Suivi projet web (Optimisation SEO) avec Michelin.,2025-07-04,réunion
+301,2025-01-03,26,16,132,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-01-18,appel
+302,2025-01-30,70,9,98,Suivi projet web (Maintenance WordPress) avec Decathlon.,2025-02-14,ticket
+303,2025-06-14,33,19,41,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-25,email
+304,2025-06-10,33,19,91,Suivi projet web (Développement Back-office) avec Airbus.,2025-06-24,email
+305,2025-05-23,35,1,132,Suivi projet web (Maintenance WordPress) avec Thales.,2025-06-13,email
+306,2025-04-30,35,1,123,Suivi projet web (Maintenance WordPress) avec Thales.,2025-05-12,réunion
+307,2024-06-24,16,18,107,Suivi projet web (Site vitrine) avec Orange Business.,2024-07-05,appel
+308,2025-11-09,49,20,66,Suivi projet web (Refonte UI/UX) avec EDF.,2025-11-29,ticket
+309,2024-07-12,21,5,92,Suivi projet web (Maintenance WordPress) avec Schneider Electric.,2024-07-31,réunion
+310,2025-03-19,66,10,76,Suivi projet web (Maintenance WordPress) avec Carrefour.,2025-04-04,appel
+311,2025-06-18,44,17,139,Suivi projet web (Maintenance WordPress) avec Capgemini.,2025-07-01,email
+312,2025-05-18,33,19,32,Suivi projet web (Développement Back-office) avec Airbus.,2025-05-29,appel
+313,2025-04-27,31,11,113,Suivi projet web (Développement Back-office) avec La Poste.,2025-05-04,ticket
+314,2025-11-19,10,11,35,Suivi projet web (Maintenance WordPress) avec La Poste.,2025-12-06,ticket
+315,2025-07-14,71,8,83,Suivi projet web (Audit accessibilité) avec Sanofi.,2025-07-21,visio
+316,2025-11-15,2,17,17,Suivi projet web (Site e-commerce) avec Capgemini.,2025-11-27,email
+317,2025-10-27,17,13,56,Suivi projet web (Audit accessibilité) avec BlaBlaCar.,2025-11-13,visio
+318,2025-12-28,55,1,62,Suivi projet web (Intégration API) avec Thales.,2026-01-15,email
+319,2025-12-08,8,18,79,Suivi projet web (Développement Back-office) avec Orange Business.,2025-12-23,ticket
+320,2024-03-07,72,16,115,Suivi projet web (Audit accessibilité) avec Crédit Agricole.,2024-03-20,réunion
+321,2025-04-09,31,11,36,Suivi projet web (Développement Back-office) avec La Poste.,2025-04-24,réunion
+322,2025-12-07,22,14,33,Suivi projet web (Intégration API) avec BNP Paribas.,2025-12-20,appel
+323,2025-01-25,24,4,53,Suivi projet web (Site e-commerce) avec Société Générale.,2025-02-11,visio
+324,2025-04-11,65,3,84,Suivi projet web (Dashboard analytics) avec Vinci.,2025-04-30,visio
+325,2024-11-02,47,4,56,Suivi projet web (Site e-commerce) avec Société Générale.,2024-11-12,réunion
+326,2025-01-12,61,11,121,Suivi projet web (Site e-commerce) avec La Poste.,2025-01-28,appel
+327,2025-05-23,20,14,69,Suivi projet web (Intégration API) avec BNP Paribas.,2025-06-12,visio
+328,2025-05-05,53,13,111,Suivi projet web (Site e-commerce) avec BlaBlaCar.,2025-05-13,réunion
+329,2024-08-04,21,5,31,Suivi projet web (Maintenance WordPress) avec Schneider Electric.,2024-08-14,réunion
+330,2024-06-24,43,15,78,Suivi projet web (Optimisation SEO) avec L'Oréal.,2024-07-06,ticket
+331,2024-05-18,19,16,91,Suivi projet web (Maintenance WordPress) avec Crédit Agricole.,2024-05-25,ticket
+332,2024-02-27,59,2,63,Suivi projet web (Dashboard analytics) avec Michelin.,2024-03-14,email
+333,2024-04-16,1,19,71,Suivi projet web (Site e-commerce) avec Airbus.,2024-04-25,visio
+334,2025-05-19,3,12,108,Suivi projet web (Développement Back-office) avec Bouygues Telecom.,2025-05-28,réunion
+335,2025-05-18,35,1,46,Suivi projet web (Maintenance WordPress) avec Thales.,2025-06-02,email
+336,2026-01-07,22,14,1,Suivi projet web (Intégration API) avec BNP Paribas.,2026-01-27,email
+337,2025-06-15,6,20,23,Suivi projet web (Développement Back-office) avec EDF.,2025-06-24,visio
+338,2025-01-13,75,13,5,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-02-01,réunion
+339,2025-03-14,25,7,10,Suivi projet web (Site vitrine) avec Eiffage.,2025-03-25,ticket
+340,2025-01-07,26,16,88,Suivi projet web (Site e-commerce) avec Crédit Agricole.,2025-01-14,email
+341,2025-04-22,28,4,50,Suivi projet web (Intégration API) avec Société Générale.,2025-05-01,appel
+342,2024-06-21,16,18,85,Suivi projet web (Site vitrine) avec Orange Business.,2024-07-09,réunion
+343,2024-12-27,24,4,102,Suivi projet web (Site e-commerce) avec Société Générale.,2025-01-11,ticket
+344,2024-06-15,21,5,15,Suivi projet web (Maintenance WordPress) avec Schneider Electric.,2024-06-25,réunion
+345,2024-10-05,39,19,34,Suivi projet web (Développement Back-office) avec Airbus.,2024-10-17,réunion
+346,2025-01-29,61,11,112,Suivi projet web (Site e-commerce) avec La Poste.,2025-02-18,visio
+347,2025-06-15,53,13,23,Suivi projet web (Site e-commerce) avec BlaBlaCar.,2025-07-04,ticket
+348,2025-02-10,36,4,78,Suivi projet web (Landing page) avec Société Générale.,2025-03-03,ticket
+349,2025-10-29,57,15,25,Suivi projet web (Audit accessibilité) avec L'Oréal.,2025-11-11,réunion
+350,2025-01-11,27,20,50,Suivi projet web (Refonte UI/UX) avec EDF.,2025-01-27,ticket
+351,2024-07-19,73,11,49,Suivi projet web (Landing page) avec La Poste.,2024-07-30,réunion
+352,2024-06-19,21,5,82,Suivi projet web (Maintenance WordPress) avec Schneider Electric.,2024-07-01,ticket
+353,2025-02-07,75,13,55,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-02-21,ticket
+354,2024-08-16,73,11,93,Suivi projet web (Landing page) avec La Poste.,2024-08-28,email
+355,2026-01-14,52,15,55,Suivi projet web (Site e-commerce) avec L'Oréal.,2026-01-23,email
+356,2024-05-04,67,19,81,Suivi projet web (Intégration API) avec Airbus.,2024-05-14,email
+357,2025-10-26,58,1,50,Suivi projet web (Intégration API) avec Thales.,2025-11-10,réunion
+358,2025-02-25,75,13,21,Suivi projet web (Dashboard analytics) avec BlaBlaCar.,2025-03-07,appel
+359,2024-09-19,45,8,79,Suivi projet web (Développement Back-office) avec Sanofi.,2024-10-08,email
+360,2025-05-09,44,17,78,Suivi projet web (Maintenance WordPress) avec Capgemini.,2025-05-23,réunion

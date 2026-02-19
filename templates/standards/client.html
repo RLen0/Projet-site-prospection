@@ -1,0 +1,120 @@
+{% extends "template.html" %}
+
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+
+{% block title %}Client {{client.id_Client}} ({{client.nom}}){% endblock %}
+
+{% block template %}
+<div class="col-4">
+    <form class="row d-flex flex-column w-100" action="{{url_for('update_client', id=client.id_Client)}}" method="POST">
+        <div class="d-flex justify-content-start align-items-center pb-1 input-group input-group-sm w-100">
+            <div class="dropdown m-0 me-2">
+                <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="{{url_for('static', filename='recycle_bin.png')}}" alt="Supprimer" style="max-height: 1rem;"></button>
+                <div class="dropdown-menu text-center">
+                    <span class="text-danger dropdown-item-text">Êtes-vous sûr ?</span>
+                    <a href="{{url_for('delete', entite='client', id=client.id_Client)}}" class="btn btn-danger">Confirmer</a>
+                </div>
+            </div>
+            <span class="fw-bold input-group-text" id="id_client_label">id</span>
+            <span type="text" class="form-control text-center w-auto m-0" style="max-width: 45px">{{ client.id_client }}</span>
+        </div>
+        <div class="py-1">
+            <input type="text" name="nom" class="btn btn-light text-start fs-1 w-100 fw-bold" placeholder="Nom" value="{{ client.nom }}" aria-label="id" aria-describedby="nom_client_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="secteur_client_label">Secteur</span>
+            <input type="text" name="secteur" class="btn btn-light text-start w-100" placeholder="Secteur" value="{{ client.secteur }}" aria-label="id" aria-describedby="secteur_client_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <div class="py-1">
+            <span class="fw-bold w-100" id="ville_client_label">Ville</span>
+            <input type="text" name="ville" class="btn btn-light text-start w-100" placeholder="Ville" value="{{ client.ville }}" aria-label="id" aria-describedby="ville_client_label" onfocus="style.cursor='text'" onfocusout="style.cursor='auto'" onkeyup="showValidateButton()"/>
+        </div>
+        <button type="submit" id ="validate" class="btn btn-outline-success my-2 w-75 align-self-center fade hide">Valider les modifications</button>
+    </form>
+</div>
+<div class="col-8">
+    <span class="fs-5 ms-2 fst-italic">
+        Projets de {{client.nom}}
+    </span>
+    {% if projets_client %}
+    <table class="mt-1 table table-striped border-dark">
+        <thead>
+            <tr class="border-top-0">
+            {% for data in projets_client.0.keys() %}
+                <th class="">
+                    {{data|capitalize}}
+                </th>
+            {% endfor %}
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        {% for data in projets_client %}
+        <tr>
+            {% for item in data %}
+                <td>{{item.replace('_', ' ').replace('nego', 'négo').replace('mine', 'miné')|capitalize}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+<div id="Documents" class="mt-3 col-12 bg-dark-subtle rounded-3 p-2" style="min-height: 200px">
+    <span class="fs-5 fst-italic">Documents du client</span>
+    <form action="{{url_for('import_doc', entite='client', id=client.id_Client)}}" enctype="multipart/form-data" class="dropend" method="POST">
+        <button class="input-group-text dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Importer un nouveau document</button>
+        <div class="dropdown-menu input-group w-auto px-2">
+            <div class="d-flex">
+                <input type="file" name="files" class="dropdown-item ps-0 pe-2" multiple>
+                <input id="submit_import_btn" type="submit" value="Importer" class="input-group-text btn btn-outline-dark">
+            </div>
+        </div>
+    </form>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+        {% if errors %}
+        <div class="alert alert-danger alert-dismissible fade show w-25 my-2 rounded-3 d-flex justify-content-start align-items-start" role="alert">
+            {%- for msg in errors %}
+              <span class="w-auto">
+                {{ msg }}
+              </span>
+            {% endfor %}
+          <button type="button" class="btn-close btn w-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+    {% endwith %}
+    <ul>
+    {% for doc in docs_client %}
+        <li class="py-1 my-0" style="max-width: fit-content" onmouseenter="showSuppr(this, true)" onmouseleave="showSuppr(this, false)">
+            <form action="{{url_for('delete_doc')}}" method="POST">
+            <a href="{{url_for('static', filename=doc.0)}}" class="link-primary me-2" download>{{doc.1}}</a>
+                <label>
+                    <input type="text" name="path" value="{{doc.0}}" hidden="hidden" class="hide hidden">
+                    <input type="text" name="from" class="dropdown-item hidden hide" value="{{url_for('client', id=client.id_Client)}}" hidden="hidden">
+                </label>
+
+                <!--                    <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden><img loading="eager" longdesc="https://www.flaticon.com/free-icon/recycle-bin_7491835" style="max-height: 20px" src="{{url_for('static', filename='recycle_bin.png')}}" alt="Poubelle"></button>-->
+                <button type="submit" class="btn btn-outline-danger btn-sm m-0 border-2" hidden>Supprimer</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<script>
+    function showSuppr(item, show) {
+        console.log(item)
+        console.log(show)
+        const btns = item.getElementsByTagName("button");
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].hidden = !show;
+        }
+    }
+
+    function showValidateButton() {
+        const btn_validate = document.getElementById("validate")
+        btn_validate.classList.replace('hide', 'show')
+    }
+</script>
+{% endblock %}

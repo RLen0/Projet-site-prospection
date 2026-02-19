@@ -1,0 +1,50 @@
+
+{% extends "template.html" %}
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %} 
+{% block title %}Membre{% endblock %}
+<!--id ou name ici jsp-->
+
+{% block template %}
+<div class="col-xl-10 col-12 m-0">
+            <div id="template" class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                <div class="col-xl-10 col-12 m-0">
+                <form action="{{url_for ('new_membre')}}" method='POST'>
+                    <div id="template" class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                        <div class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping1" name="'nom">Nom</span>
+                            <input type ="text" class ="form-control" aria-label = "Nom intervenant" aria-describedby="addon-wrapping1" placeholder = "Nom" name="nom">
+                            <span class = "input-group-text" id = "addon-wrapping2">Prénom</span>
+                            <input type ="text" class ="form-control" aria-label = "Nom intervenant" aria-describedby="addon-wrapping2" name='prenom'placeholder = "Prénom" >
+                        </div>
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping3">Année d'étude</span>
+                            <input type ="text" class ="form-control" aria-label = "Année d'étude" aria-describedby="addon-wrapping3" name='annee'placeholder = "Année d'étude" >
+                            <span class = "input-group-text" id = "addon-wrapping4">Statut</span>
+                            <input type ="text" class ="form-control" aria-label = "Statut" aria-describedby="addon-wrapping4" name='statut' placeholder = "Statut" >
+                        </div>
+                        <div class = "col justify-content-center">
+                            <div class = "input-group mb-3">
+                                <button class = "btn btn-outline-secondary" type = "submit" id = "button-addon9">Valider</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+</div>
+{% with errors = get_flashed_messages(category_filter=["error"]) %}
+        {% if errors %}
+        <div class="alert alert-danger alert-dismissible fade show w-25 my-2 rounded-3 d-flex justify-content-start align-items-start" role="alert">
+            {%- for msg in errors %}
+              <span class="w-auto">
+                {{ msg }}
+              </span>
+            {% endfor %}
+          <button type="button" class="btn-close btn w-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endif %}
+    {% endwith %}
+{% endblock %}

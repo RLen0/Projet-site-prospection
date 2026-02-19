@@ -1,0 +1,53 @@
+y
+
+{% extends "template.html" %}
+
+{% block title %} Nouveau Client {% endblock %}
+
+
+
+{% block head %}
+<style>{% include 'rounded-table.css' %}</style>
+{% endblock %}
+
+
+{% block template%}
+
+<div class="col-xl-10 col-12 m-0">
+            <div id="template" class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                <div class="col-xl-10 col-12 m-0">
+                <form action="{{url_for ('new_client')}}" method='POST'>
+                    <div class="d-flex flex-wrap bg-body-secondary rounded-3 h-100 w-100">
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping1">Client</span>
+                            <input type ="text" class ="form-control" aria-label = "Nom client" aria-describedby="addon-wrapping1" placeholder = "Nom du client" name="nom" >
+                        </div>
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping2">Contact</span>
+                            <input type ="text" class ="form-control" aria-label = "Numéro du client " aria-describedby="addon-wrapping2" placeholder = "Numéro de téléphone" name="telephone" >
+                        </div>
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping2">Ville</span>
+                            <input type ="text" class ="form-control" aria-label = "Ville " aria-describedby="addon-wrapping2" placeholder = "Ville du client" name="ville" >
+                        </div>
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "baddon-wrapping4">Email</span>
+                            <input type ="text" class ="form-control" aria-label = "Email du client " aria-describedby="addon-wrapping4" placeholder = "Email du client" name="email" >
+                        </div>
+                        <div class = "input-group mb-3">
+                            <span class = "input-group-text" id = "addon-wrapping2">Secteur</span>
+                            <input type ="text" class ="form-control" aria-label = "Secteur " aria-describedby="addon-wrapping2" placeholder = "Secteur" name="secteur" >
+                        </div>
+                        <div class = "col-xl-10 col-12 m-0">
+                                <div class = "col justify-content-center">
+                                    <div class = "input-group mb-3">
+                                        <button class = "btn btn-outline-secondary" type ="submit" id = "button-addon9">Valider</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+</div>
+{% endblock %}
