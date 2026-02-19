@@ -1,0 +1,6 @@
+/.venv/
+/.idea/
+/.editorconfig
+*__pycache__*
+/venv/
+*.db
